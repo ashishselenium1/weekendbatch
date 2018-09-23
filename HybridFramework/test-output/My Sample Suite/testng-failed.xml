@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [My Sample Suite]">
-  <test name="Create PortFolio test(failed)">
-    <classes>
-      <class name="com.qtpselenium.hybrid.testcases.LoginTest">
-        <methods>
-          <include name="init"/>
-          <include name="quit"/>
-        </methods>
-      </class> <!-- com.qtpselenium.hybrid.testcases.LoginTest -->
-      <class name="com.qtpselenium.hybrid.testcases.DeletePortfolioTest">
-        <methods>
-          <include name="init"/>
-          <include name="quit"/>
-        </methods>
-      </class> <!-- com.qtpselenium.hybrid.testcases.DeletePortfolioTest -->
-      <class name="com.qtpselenium.hybrid.testcases.CreatePortfolioTest">
-        <methods>
-          <include name="createPortFolioTest" invocation-numbers="0 1"/>
-          <include name="init"/>
-          <include name="quit"/>
-        </methods>
-      </class> <!-- com.qtpselenium.hybrid.testcases.CreatePortfolioTest -->
-    </classes>
-  </test> <!-- Create PortFolio test(failed) -->
-  <test name="Delete Portfolio test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [My Sample Suite]" parallel="tests">
+  <test name="Delete Portfolio test(failed)" parallel="tests">
     <classes>
       <class name="com.qtpselenium.hybrid.testcases.LoginTest">
         <methods>
@@ -47,4 +24,50 @@
       </class> <!-- com.qtpselenium.hybrid.testcases.CreatePortfolioTest -->
     </classes>
   </test> <!-- Delete Portfolio test(failed) -->
+  <test name="Create PortFolio test(failed)" parallel="tests">
+    <classes>
+      <class name="com.qtpselenium.hybrid.testcases.LoginTest">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qtpselenium.hybrid.testcases.LoginTest -->
+      <class name="com.qtpselenium.hybrid.testcases.DeletePortfolioTest">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qtpselenium.hybrid.testcases.DeletePortfolioTest -->
+      <class name="com.qtpselenium.hybrid.testcases.CreatePortfolioTest">
+        <methods>
+          <include name="createPortFolioTest" invocation-numbers="0 1"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qtpselenium.hybrid.testcases.CreatePortfolioTest -->
+    </classes>
+  </test> <!-- Create PortFolio test(failed) -->
+  <test name="Login Test(failed)" parallel="tests">
+    <classes>
+      <class name="com.qtpselenium.hybrid.testcases.LoginTest">
+        <methods>
+          <include name="doLogin" invocation-numbers="0 1"/>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qtpselenium.hybrid.testcases.LoginTest -->
+      <class name="com.qtpselenium.hybrid.testcases.DeletePortfolioTest">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qtpselenium.hybrid.testcases.DeletePortfolioTest -->
+      <class name="com.qtpselenium.hybrid.testcases.CreatePortfolioTest">
+        <methods>
+          <include name="init"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.qtpselenium.hybrid.testcases.CreatePortfolioTest -->
+    </classes>
+  </test> <!-- Login Test(failed) -->
 </suite> <!-- Failed suite [My Sample Suite] -->

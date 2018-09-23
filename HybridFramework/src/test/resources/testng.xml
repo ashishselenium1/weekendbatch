@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="My Sample Suite" parallel="tests">
+<suite name="My Sample Suite11" parallel="tests">
 
 <test name="Login Test">
     <classes>

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Sep 22 20:48:19 IST 2018</td>
+<td>Started on:</td><td>Sun Sep 23 21:00:07 IST 2018</td>
 </tr>
-<tr><td>Total time:</td><td>36 seconds (36291 ms)</td>
+<tr><td>Total time:</td><td>12 seconds (12212 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,24 +76,27 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.qtpselenium.hybrid.testcases.DeletePortfolioTest.deletePortfolioTest()'><b>deletePortfolioTest</b><br>Test class: com.qtpselenium.hybrid.testcases.DeletePortfolioTest<br>Parameters: {Runmode=Y, Portfolioname=SamplePortfolio12, Browser=Chrome}</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate element with text: SamplePortfolio12
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
-System info: host: &apos;DESKTOP-NM05SVP&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_05&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
-	at com.qtpselenium.hybrid.keywords.GenericKeywords.select(GenericKeywords.java:87)
-	at com.qtpselenium.hybrid.driver.DriverScript.executeTest(DriverScript.java:68)
+<td><div><pre>java.lang.AssertionError: Element not found password_id
+	at com.qtpselenium.hybrid.keywords.GenericKeywords.reportFailure(GenericKeywords.java:166)
+	at com.qtpselenium.hybrid.keywords.GenericKeywords.getObject(GenericKeywords.java:153)
+	at com.qtpselenium.hybrid.keywords.GenericKeywords.type(GenericKeywords.java:82)
+	at com.qtpselenium.hybrid.keywords.ApplicationKeywords.login(ApplicationKeywords.java:49)
+	at com.qtpselenium.hybrid.keywords.ApplicationKeywords.defaultLogin(ApplicationKeywords.java:40)
+	at com.qtpselenium.hybrid.driver.DriverScript.executeTest(DriverScript.java:64)
 	at com.qtpselenium.hybrid.testcases.DeletePortfolioTest.deletePortfolioTest(DeletePortfolioTest.java:46)
-... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace353761154", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace353761154'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate element with text: SamplePortfolio12
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.13.0&apos;, revision: &apos;2f0d292&apos;, time: &apos;2018-06-25T15:24:21.231Z&apos;
-System info: host: &apos;DESKTOP-NM05SVP&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_05&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
-	at com.qtpselenium.hybrid.keywords.GenericKeywords.select(GenericKeywords.java:87)
-	at com.qtpselenium.hybrid.driver.DriverScript.executeTest(DriverScript.java:68)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1175564948", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1175564948'><pre>java.lang.AssertionError: Element not found password_id
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.qtpselenium.hybrid.keywords.GenericKeywords.reportFailure(GenericKeywords.java:166)
+	at com.qtpselenium.hybrid.keywords.GenericKeywords.getObject(GenericKeywords.java:153)
+	at com.qtpselenium.hybrid.keywords.GenericKeywords.type(GenericKeywords.java:82)
+	at com.qtpselenium.hybrid.keywords.ApplicationKeywords.login(ApplicationKeywords.java:49)
+	at com.qtpselenium.hybrid.keywords.ApplicationKeywords.defaultLogin(ApplicationKeywords.java:40)
+	at com.qtpselenium.hybrid.driver.DriverScript.executeTest(DriverScript.java:64)
 	at com.qtpselenium.hybrid.testcases.DeletePortfolioTest.deletePortfolioTest(DeletePortfolioTest.java:46)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -108,19 +111,15 @@ Driver info: driver.version: unknown
 	at org.testng.TestRunner.privateRun(TestRunner.java:756)
 	at org.testng.TestRunner.run(TestRunner.java:610)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.TestNG.privateMain(TestNG.java:1434)
-	at org.testng.TestNG.main(TestNG.java:1403)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
 </pre></div></td>
-<td>36</td>
+<td>11</td>
 <td>com.qtpselenium.hybrid.testcases.DeletePortfolioTest@5ccddd20</td></tr>
 </table><p>
 </body>
