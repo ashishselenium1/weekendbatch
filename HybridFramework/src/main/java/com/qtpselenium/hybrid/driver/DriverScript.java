@@ -30,6 +30,7 @@ public class DriverScript {
 
 	//public static void main(String[] args) {
 	  public void executeTest(String testName , Xls_Reader xls,Hashtable<String,String> table) {
+		  System.out.println("Running from jenkins");
 		//GenericKeywords app = new GenericKeywords();// constructor will be called
 		  // prop file in init
 		ApplicationKeywords app = new ApplicationKeywords(test);// constructor will be called
